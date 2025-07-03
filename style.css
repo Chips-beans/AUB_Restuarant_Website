@@ -2,11 +2,18 @@
   margin: 0;
   padding: 0;
 }
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: crimson;
+  
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: crimson;
+  top: 0;
 }
 header nav ul {
   list-style: none;
@@ -70,4 +77,36 @@ header nav #menu:hover .content {
 header nav #menu:hover .content li a:hover {
   background-color: crimson;
   transform: scale(1.04);
+}
+.parallax{
+  background-image: url(img_library.jpg);
+  height: 20vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.body{
+  margin: 0 30px;
+  margin-top: 60px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+footer{
+  height: 40px;
+  width: 100%;
+  bottom: 0;
+  background-color: antiquewhite;
+  /* position: fixed; */
+}
+footer .center-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+footer p{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  font-weight: bold;
 }
