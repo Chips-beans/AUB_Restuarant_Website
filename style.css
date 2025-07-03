@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: crimson;
+  
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: crimson;
+  top: 0;
+}
+header nav ul {
+  list-style: none;
+}
+header nav li {
+  display: inline-block;
+  margin: 3px 3px;
+}
+header nav li a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: white;
+  display: block;
+  padding: 15px 20px;
+  transition: all 0.7s ease;
+}
+header nav li a:hover {
+  background-color: brown;
+  transform: scale(1.02);
+  border-radius: 10px;
+  border: none;
+
+}
+header nav .active{
+    background-color: hsl(348, 83%, 40%);
+    border: none;
+    border-radius: 10px;
+}
+header a {
+  text-decoration: none;
+}
+header .logo {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0 10px;
+}
+header .logo a {
+  color: white;
+}
+header nav .content {
+  display: none;
+}
+header nav .content li:last-child {
+    border: none;
+}
+header nav .content li {
+  display: block;
+  background-color: hsl(0, 94%, 51%);
+  transition: all 0.7s ease;
+  box-shadow: 2px 2px 5px hsla(0, 1%, 34%, 0.8);
+  margin: 0;
+  border-bottom: 1px solid white;
+}
+header nav #menu:hover .content {
+  margin-top: 4px;
+  display: block;
+  position: absolute;
+}
+header nav #menu:hover .content li a:hover {
+  background-color: crimson;
+  transform: scale(1.04);
+}
+.parallax{
+  background-image: url(img_library.jpg);
+  height: 20vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.body{
+  margin: 0 30px;
+  margin-top: 60px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+footer{
+  height: 40px;
+  width: 100%;
+  bottom: 0;
+  background-color: antiquewhite;
+  /* position: fixed; */
+}
+footer .center-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+footer p{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
