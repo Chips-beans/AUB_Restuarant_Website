@@ -1,14 +1,22 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
+/*------- header style -------*/
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: crimson;
-  
+
   position: fixed;
   width: 100%;
   height: 60px;
@@ -30,21 +38,20 @@ header nav li a {
   display: block;
   padding: 15px 20px;
   transition: all 0.7s ease;
+  text-decoration: none;
 }
 header nav li a:hover {
   background-color: brown;
   transform: scale(1.02);
   border-radius: 10px;
   border: none;
+}
 
-}
-header nav .active{
-    background-color: hsl(348, 83%, 40%);
-    border: none;
-    border-radius: 10px;
-}
-header a {
-  text-decoration: none;
+/*active*/
+header nav .active {
+  background-color: hsl(348, 83%, 40%);
+  border: none;
+  border-radius: 10px;
 }
 header .logo {
   font-family: "Courier New", Courier, monospace;
@@ -54,12 +61,13 @@ header .logo {
 }
 header .logo a {
   color: white;
+  text-decoration: none;
 }
 header nav .content {
   display: none;
 }
 header nav .content li:last-child {
-    border: none;
+  border: none;
 }
 header nav .content li {
   display: block;
@@ -78,35 +86,50 @@ header nav #menu:hover .content li a:hover {
   background-color: crimson;
   transform: scale(1.04);
 }
-.parallax{
-  background-image: url(img_library.jpg);
+/*---------- End of header style ----------*/
+
+/*-------------- Body style --------------*/
+.body {
+  margin: 5px 100px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: white;
+  padding: 5px 0;
+}
+.body:first-child {
+  margin-top: 60px;
+}
+
+/*-------------- End of body style --------------*/
+/*------------ parallax style ------------*/
+.parallax {
+  background-image: url(../image/img_library.jpg);
   height: 20vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.body{
-  margin: 0 30px;
-  margin-top: 60px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-footer{
+/*------------ End of parallax style ------------*/
+
+/*--------------- Footer style ---------------*/
+footer {
   height: 40px;
   width: 100%;
   bottom: 0;
   background-color: antiquewhite;
   /* position: fixed; */
 }
-footer .center-footer{
+footer .center-footer {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 40px;
 }
-footer p{
+footer p {
   text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: large;
   font-weight: bold;
 }
+
+/*--------------- End of footer style ---------------*/

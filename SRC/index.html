@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUB_Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="nav_bar"></div>
+    <div id="content"></div>
+    <footer>
+        <div class="center-footer">
+            <p>
+                this page is created by ACLEDA University of bussiness
+            </p>
+        </div>
+    </footer>
+    <script>
+        fetch('nav_bar.html')
+            .then(result => result.text())
+            .then(data => {
+                document.getElementById('nav_bar').innerHTML = data;
+            });
+
+
+        function loadPage(page, link = null) {
+            fetch(page)
+                .then(result => result.text())
+                .then(data => {
+                    document.getElementById('content').innerHTML = data;
+                });
+
+            if (link) {
+                document.querySelectorAll('header nav li a').forEach(Element => {
+                    Element.classList.remove('active');
+                });
+
+                link.classList.add('active')
+            }
+        }
+        window.onload = () => {
+            const homeLink = document.querySelector('a[onclick*="home.html"]');
+            if (homeLink) {
+                loadPage('home.html', homeLink);
+            }
+        };
+    </script>
+</body>
+
+</html>
