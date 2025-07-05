@@ -56,6 +56,9 @@ header nav li a:hover {
   border: none;
   
 }
+header nav ul li i{
+  margin-left: 10px;
+}
 
 /*active*/
 header nav .active {
