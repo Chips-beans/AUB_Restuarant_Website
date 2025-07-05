@@ -124,14 +124,14 @@ header nav #menu:hover .content ul li a:hover {
 
 /*-------------- Body style --------------*/
 .body {
-  margin: 5px 100px;
+  margin: 5px 100px 0 100px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   background-color: white;
   padding: 5px 0;
 }
-.body:first-child {
+/* .body:first-child {
   margin-top: 60px;
-}
+} */
 
 /*-------------- End of body style --------------*/
 /*------------ parallax style ------------*/
@@ -152,7 +152,7 @@ footer {
   width: 100%;
   bottom: 0;
   background-color: antiquewhite;
-  /* position: fixed; */
+  position: fixed;
 }
 footer .center-footer {
   display: flex;
