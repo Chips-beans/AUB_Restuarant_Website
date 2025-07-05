@@ -19,15 +19,14 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #3876BF;
-  margin: 20px;
+  margin: 20px 10px 0 10px;
   border-radius: 25px;
-  
-  position: fixed;
-  width: 98%;
+  position: sticky;
+  width: 99%;
   height: 45px;
   background-color: #062C80;
   top: 0;
-  
+  margin-right: 10px;
 }
 
 header nav ul {
@@ -66,6 +65,9 @@ header nav .active {
   border-radius: 20px;
   font-weight: bold;
 }
+header nav #menu .content ul .active{
+  border-radius: 0px;
+}
 header .logo {
   font-family: "Courier New", Courier, monospace;
   font-size: 1.5em;
@@ -76,15 +78,7 @@ header .logo a {
   color: white;
   text-decoration: none;
 }
-header nav #menu{
-  position: relative;
-}
-header nav #menu .content {
-  position: absolute;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
+
 header nav .content li:last-child {
   border: none;
 }
@@ -94,7 +88,19 @@ header nav .content li {
   transition: all 0.2s ease;
   box-shadow: 2px 2px 5px hsla(0, 1%, 34%, 0.8);
   margin: 0;
-  border-bottom: 1px solid white;
+}
+/*----------------- Drop down menu -----------------*/
+header nav #menu{
+  position: relative;
+}
+header nav #menu .content {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.7s ease, transform 0.5s ease;
+}
+header nav #menu .content ul li a{
+  padding:  15px 40px;
 }
 
 header nav #menu:hover .content {
@@ -103,12 +109,14 @@ header nav #menu:hover .content {
   position: absolute;
   opacity: 1;
 }
-header nav #menu:hover .content li a:hover {
+header nav #menu:hover .content ul li a:hover {
   background-color: #e6e5da ;
   color: #062C80;
   border: none;
   border-radius: 0;
+
 }
+/*-----------------End of drop down menu -----------------*/
 /*---------- End of header style ----------*/
 
 /*-------------- Body style --------------*/
