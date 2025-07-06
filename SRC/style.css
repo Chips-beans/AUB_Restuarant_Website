@@ -2,15 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+
 }
+
 body {
   background-color: #F6F5DA;
   display: flex;
   flex-direction: column;
   gap: 0;
-  
-  
+
+
 }
 
 /*------- header style -------*/
@@ -31,8 +32,9 @@ header {
 
 header nav ul {
   list-style: none;
-  
+
 }
+
 header nav li {
   display: inline-block;
   margin: 3px;
@@ -45,18 +47,20 @@ header nav li a {
   color: white;
   display: block;
   padding: 10px 35px;
-  transition: all 0.2 ;
+  transition: all 0.2;
   text-decoration: none;
-  
+
 }
+
 header nav li a:hover {
-  background-color: #e6e5da ;
+  background-color: #e6e5da;
   color: #062C80;
   border-radius: 20px;
   border: none;
-  
+
 }
-header nav ul li i{
+
+header nav ul li i {
   margin-left: 10px;
 }
 
@@ -68,15 +72,18 @@ header nav .active {
   border-radius: 20px;
   font-weight: bold;
 }
-header nav #menu .content ul .active{
+
+header nav #menu .content ul .active {
   border-radius: 0px;
 }
+
 header .logo {
   font-family: "Courier New", Courier, monospace;
   font-size: 1.5em;
   font-weight: bold;
   margin: 0 20px;
 }
+
 header .logo a {
   color: white;
   text-decoration: none;
@@ -85,6 +92,7 @@ header .logo a {
 header nav .content li:last-child {
   border: none;
 }
+
 header nav .content li {
   display: block;
   background-color: #062C80;
@@ -92,18 +100,21 @@ header nav .content li {
   box-shadow: 2px 2px 5px hsla(0, 1%, 34%, 0.8);
   margin: 0;
 }
+
 /*----------------- Drop down menu -----------------*/
-header nav #menu{
+header nav #menu {
   position: relative;
 }
+
 header nav #menu .content {
   position: absolute;
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.7s ease, transform 0.5s ease;
 }
-header nav #menu .content ul li a{
-  padding:  15px 40px;
+
+header nav #menu .content ul li a {
+  padding: 15px 40px;
 }
 
 header nav #menu:hover .content {
@@ -112,13 +123,15 @@ header nav #menu:hover .content {
   position: absolute;
   opacity: 1;
 }
+
 header nav #menu:hover .content ul li a:hover {
-  background-color: #e6e5da ;
+  background-color: #e6e5da;
   color: #062C80;
   border: none;
   border-radius: 0;
 
 }
+
 /*-----------------End of drop down menu -----------------*/
 /*---------- End of header style ----------*/
 
@@ -129,6 +142,7 @@ header nav #menu:hover .content ul li a:hover {
   background-color: white;
   padding: 5px 0;
 }
+
 /* .body:first-child {
   margin-top: 60px;
 } */
@@ -136,7 +150,7 @@ header nav #menu:hover .content ul li a:hover {
 /*-------------- End of body style --------------*/
 /*------------ parallax style ------------*/
 .parallax {
-  
+
   background-image: url(../image/img_library.jpg);
   height: 100vh;
   background-attachment: fixed;
@@ -144,6 +158,7 @@ header nav #menu:hover .content ul li a:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 /*------------ End of parallax style ------------*/
 
 /*--------------- Footer style ---------------*/
@@ -154,12 +169,14 @@ footer {
   background-color: antiquewhite;
   position: fixed;
 }
+
 footer .center-footer {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 40px;
 }
+
 footer p {
   text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -169,5 +186,49 @@ footer p {
 
 /*--------------- End of footer style ---------------*/
 
+#about {
+  padding: 40px;
+  background-color: #fff9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1d1c1c;
+}
 
+.about-container {
+  max-width: 800px;
+  margin: auto;
+}
 
+.about-container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+  font-style: unset;
+}
+
+.about-container p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.social-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-buttons p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #2711a6;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #ba3879;
+ 
+}
