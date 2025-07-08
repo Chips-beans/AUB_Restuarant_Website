@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #e6f0fa;
+  background: linear-gradient(to bottom, #e6f0fa 80%, #000000);
   /* background-color: #e7f9f0; */
   display: flex;
   flex-direction: column;
@@ -312,21 +312,21 @@ footer p {
       height: 135px;
       border-radius: 15px;
       margin: 35px 25px;
-      transition: box-shadow 0.3s ease;
+      transition: all 0.3s ease;
       cursor: pointer;
     }
     .menubtn .breakfastbtn{
       background-color: #FFFA8D;
     }
     .menubtn .breakfastbtn:hover{
-    
+      transform: scale(1.05);
       box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,rgba(0, 0, 0, 0.06) 0px 2px 1px;
     }
     .menubtn .launchbtn{
       background-color: #FFB823;
     }
     .menubtn .launchbtn:hover{
-      
+      transform: scale(1.05);
       box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,rgba(0, 0, 0, 0.06) 0px 2px 1px;
     }
     .menubtn .dinnerbtn{
@@ -334,7 +334,7 @@ footer p {
 
     }
     .menubtn .dinnerbtn:hover{
-      
+      transform: scale(1.05);
       box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,rgba(0, 0, 0, 0.06) 0px 2px 1px;
     }
     .label{
