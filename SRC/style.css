@@ -6,7 +6,8 @@
 }
 
 body {
-  background-color: #F6F5DA;
+  background-color: #e6f0fa;
+  /* background-color: #e7f9f0; */
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -25,7 +26,7 @@ body {
 .background{
   width: 100%;
   height: 85px ;
-  background-color: #ece9b5;
+  background-color: #f2f2f2;
   /* position: fixed; */
   display: flex;
   
@@ -35,6 +36,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #3876BF;
+
   margin: 18px 10px;
   border-radius: 25px;
   
@@ -69,7 +71,7 @@ header nav li a {
 }
 
 header nav li a:hover {
-  background-color: #e6e5da;
+  background-color: #f2f2f2;
   color: #062C80;
   border-radius: 20px;
   border: none;
@@ -82,7 +84,7 @@ header nav ul li i {
 
 /*active*/
 header nav .active {
-  background-color: #F3F0CA;
+  background-color: #f2f2f2;
   color: #062C80;
   border: none;
   border-radius: 20px;
@@ -141,7 +143,7 @@ header nav #menu:hover .content {
 }
 
 header nav #menu:hover .content ul li a:hover {
-  background-color: #e6e5da;
+  background-color: #f2f2f2;
   color: #062C80;
   border: none;
   border-radius: 0;
@@ -182,7 +184,7 @@ footer {
   height: 40px;
   width: 100%;
   bottom: 0;
-  background-color: antiquewhite;
+  background-color: #f2f2f2;
   position: fixed;
 }
 
@@ -248,3 +250,110 @@ footer p {
   color: #ba3879;
  
 }
+
+/* Menu Page */
+    /* mainmenu */
+    .mainmenu{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: 100vh;
+      justify-content: center;
+      margin-top: 60px;
+      
+    }
+    
+    .quote{
+      padding-left : 60px;
+    }
+    .quote h1{
+      
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 44px;
+      color: #000000;
+  
+    }
+    .quote span{
+      font-family: 'Lobster' ;
+      color: #062C80;
+      font-weight: 550;
+      font-size: 62px;
+      text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      
+    }
+    hr{
+      margin:25px auto;
+      width: 45%;
+    }
+    .quote .descipt{
+      font-family: 'Faustina';
+      font-weight: 500;
+      font-size: 22px;
+      text-align: left;
+      
+    }
+    .menubtn{
+      margin-top: 100px;
+    }
+    .menubtn h3{
+      font-family:'Yeseva One';
+      font-weight: 500;
+      font-size: 34px;
+      color: #062C80;
+      text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .headmenu .quote .menubtn img{
+      width: 26px;
+    }
+    .menubtn button{
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      border: none;
+      /* padding: 55px 25px; */
+      width: 95px;
+      height: 135px;
+      border-radius: 15px;
+      margin: 35px 25px;
+      transition: box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .menubtn .breakfastbtn{
+      background-color: #FFFA8D;
+    }
+    .menubtn .breakfastbtn:hover{
+    
+      box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,rgba(0, 0, 0, 0.06) 0px 2px 1px;
+    }
+    .menubtn .launchbtn{
+      background-color: #FFB823;
+    }
+    .menubtn .launchbtn:hover{
+      
+      box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,rgba(0, 0, 0, 0.06) 0px 2px 1px;
+    }
+    .menubtn .dinnerbtn{
+      background-color: #3a23be;
+
+    }
+    .menubtn .dinnerbtn:hover{
+      
+      box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,rgba(0, 0, 0, 0.06) 0px 2px 1px;
+    }
+    .label{
+      position: relative;
+    }
+    .label img{
+      width: 600px;
+      border-radius: 25px;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+    .label .card1{
+      position: absolute;
+      top: 0;
+    }
+    .label .card2{
+      width: 570px;
+      position: absolute;
+      top:35%;
+      left:25% ;
+    }
+    
+/* Enf of Menu Page */
