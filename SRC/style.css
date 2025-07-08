@@ -6,8 +6,8 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #e6f0fa 80%, #000000);
-  /* background-color: #e7f9f0; */
+  background-color: #e6f0fa;
+  /* background-color: #e7f9f0; #e6f0fa */
   display: flex;
   flex-direction: column;
   gap: 0;
