@@ -204,52 +204,7 @@ footer p {
 
 /*--------------- End of footer style ---------------*/
 
-#about {
-  padding: 40px;
-  background-color: #fff9f9;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #1d1c1c;
-}
 
-.about-container {
-  max-width: 800px;
-  margin: auto;
-}
-
-.about-container h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  text-align: center;
-  font-style: unset;
-}
-
-.about-container p {
-  line-height: 1.6;
-  margin-bottom: 15px;
-}
-
-.social-buttons {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.social-buttons p {
-  font-size: 1.1em;
-  margin-bottom: 10px;
-}
-
-.social-icon {
-  margin: 0 10px;
-  text-decoration: none;
-  font-size: 24px;
-  color: #2711a6;
-  transition: color 0.3s ease;
-}
-
-.social-icon:hover {
-  color: #ba3879;
- 
-}
 
 /* Menu Page */
     /* mainmenu */
@@ -357,3 +312,6 @@ footer p {
     }
     
 /* Enf of Menu Page */
+
+
+/* about page */
