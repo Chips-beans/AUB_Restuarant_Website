@@ -7,7 +7,7 @@
 
 body {
   background-color: #e6f0fa;
-  /* background-color: #e7f9f0; #e6f0fa */
+  
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -253,23 +253,31 @@ footer p {
 
 /* Menu Page */
     /* mainmenu */
+    
     .mainmenu{
       display: grid;
       grid-template-columns: repeat(2,1fr);
-      grid-template-rows: 100vh;
+      grid-template-rows: 95vh;
       justify-content: center;
-      margin-top: 60px;
-      
+      /* margin-top: 60px; */
+      overflow: hidden;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent), 
+       url(/image/menu/label1.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;    
+      background-position: center
     }
     
     .quote{
-      padding-left : 60px;
+      margin-top: 80px;
+      margin-left: 100px;
     }
     .quote h1{
       
       font-family: 'Luckiest Guy', cursive;
       font-size: 44px;
-      color: #000000;
+      color: #cccccc;
   
     }
     .quote span{
@@ -281,7 +289,7 @@ footer p {
       
     }
     hr{
-      margin:25px auto;
+      margin:25px ;
       width: 45%;
     }
     .quote .descipt{
@@ -289,7 +297,7 @@ footer p {
       font-weight: 500;
       font-size: 22px;
       text-align: left;
-      
+      color:#cccccc;
     }
     .menubtn{
       margin-top: 100px;
@@ -341,6 +349,7 @@ footer p {
       position: relative;
     }
     .label img{
+      
       width: 600px;
       border-radius: 25px;
       box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -349,11 +358,16 @@ footer p {
       position: absolute;
       top: 0;
     }
-    .label .card2{
-      width: 570px;
+    
+    .label video{
+      width: 550px;
       position: absolute;
-      top:35%;
-      left:25% ;
+      top:23%;
+      left:15% ;
+      /* border-radius:250px; */
+      border-top-left-radius: 250px;
+      border-top-right-radius: 250px;
+      
     }
     
 /* Enf of Menu Page */
