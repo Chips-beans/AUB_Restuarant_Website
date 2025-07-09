@@ -4,7 +4,9 @@
   box-sizing: border-box;
 
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   background-color: #e6f0fa;
   
@@ -35,7 +37,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #3876BF;
 
   margin: 18px 10px;
   border-radius: 25px;
@@ -257,12 +258,12 @@ footer p {
     .mainmenu{
       display: grid;
       grid-template-columns: repeat(2,1fr);
-      grid-template-rows: 95vh;
+      grid-template-rows: 92vh;
       justify-content: center;
       /* margin-top: 60px; */
       overflow: hidden;
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent), 
-       url(/image/menu/label1.jpg);
+      url(/image/menu/label1.jpg);
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;    
@@ -324,7 +325,7 @@ footer p {
       cursor: pointer;
     }
     .menubtn .breakfastbtn{
-      background-color: #FFFA8D;
+      background-color: #e6e07a;
     }
     .menubtn .breakfastbtn:hover{
       transform: scale(1.05);
@@ -338,7 +339,7 @@ footer p {
       box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,rgba(0, 0, 0, 0.06) 0px 2px 1px;
     }
     .menubtn .dinnerbtn{
-      background-color: #3a23be;
+      background-color: #062C80;
 
     }
     .menubtn .dinnerbtn:hover{
@@ -348,26 +349,24 @@ footer p {
     .label{
       position: relative;
     }
-    .label img{
-      
-      width: 600px;
-      border-radius: 25px;
-      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    }
-    .label .card1{
-      position: absolute;
-      top: 0;
-    }
+    
     
     .label video{
-      width: 550px;
+      width: 600px;
       position: absolute;
-      top:23%;
+      top:20%;
       left:15% ;
-      /* border-radius:250px; */
-      border-top-left-radius: 250px;
-      border-top-right-radius: 250px;
+      box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+      
+      border-top-left-radius: 275px;
+      border-top-right-radius: 275px;
       
     }
-    
+    #breakfast{
+      height: 100vh;
+    }
+    #breakfast .breakfastlabel{
+      
+    }
+
 /* Enf of Menu Page */
