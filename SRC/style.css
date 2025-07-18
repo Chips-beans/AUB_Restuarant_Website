@@ -170,8 +170,61 @@ header nav #menu:hover .content ul li a:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.home_parallax {
+  background-image: url(../image/home_parallax.jpg);
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /*------------ End of parallax style ------------*/
+/*------------------ Home page ------------------*/
+.rest_image {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../image/restaurant-500.png);
+  background-size: cover;
+  background-position: center;
+}
+.rest_desc {
+  padding: 40px 20px;
+  text-align: center;
+  color: #112A12;
+  background-color: #f3eee4;
+  box-shadow: 2px 2px 5px hsla(0, 1%, 34%, 0.3);
+}
+.chief{
+  display: flex;
+  padding: 10px 10px;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.chief_image {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+}
+.chief_image img {
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.chief_desc {
+  width: 70%;
+  height: 40vh;
+  padding: 40px 20px;
+  text-align: center;
+  color: #112A12;
+  background-color: #f3eee4;
+  box-shadow: 2px 2px 5px hsla(0, 1%, 34%, 0.3);
+  margin-right: 100px;
+}
+/*------------------ end of Home page ------------------*/
 
 /*--------------- Footer style ---------------*/
 footer {
