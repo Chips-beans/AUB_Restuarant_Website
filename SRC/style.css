@@ -402,7 +402,7 @@ footer p {
 .mainmenu {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 92vh;
+  grid-template-rows: 100vh;
   justify-content: center;
   /* margin-top: 60px; */
   overflow: hidden;
