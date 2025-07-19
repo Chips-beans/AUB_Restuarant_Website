@@ -315,14 +315,60 @@ footer p {
       border-top-right-radius: 275px;
       
     }
-    #breakfast{
+    #foodlabel{
       height: 100vh;
     }
-   #breakfast .breakfastlabel img{
-    width: 50%;
-    
-   }
+    .menuswitchbtn {
+            padding: 15px;
+            width: 500px;
+            margin: 0 auto;
+        }
 
+        .menuswitchbtn ul {
+            list-style: none;
+            text-align: center;
+            position: relative;
+        }
+        .activehr{
+          margin: auto;
+          margin-top: 15px;
+          margin-bottom: -26px;
+          width: 100px;
+          border:1px solid #002f86 ;
+        
+        }
+        .menuswitchbtn li {
+            display: inline-block;
+            margin: 0 5px;
+            padding: 15px 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            
+            position: relative;
+        }
+        .menuswitchbtn li ::before{
+          .active {display: none;}
+        }
+        .menuswitchbtn li a{
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: 500;
+          color: #333;
+        }
+        .menuswitchbtn li img {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+            vertical-align: middle;
+            
+        }
+
+        .menuswitchbtn li a.active {
+            color:  #007bff;
+            font-weight: 600;
+        }
+
+       
 /* Enf of Menu Page */
 
 /* Enf of Menu Page */
