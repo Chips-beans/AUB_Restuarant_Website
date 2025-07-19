@@ -407,7 +407,7 @@ footer p {
   /* grid-template-rows: 110vh; */
   justify-content: center;
   /* margin-top: 60px; */
-  /* overflow: hidden; */
+  overflow: hidden;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent),
     url(/image/menu/label1.jpg);
   background-repeat: no-repeat;
@@ -623,7 +623,7 @@ hr {
 
 .item-image {
   width: 100%;
-  height: 200px;
+  height: 300px;
   background: #f8f8f8;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23f8f8f8"/><text x="50%" y="50%" text-anchor="middle" dy="0.3em" font-family="Georgia, serif" font-size="10" fill="%23999">IMAGE</text></svg>');
   background-size: cover;
