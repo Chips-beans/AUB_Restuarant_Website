@@ -266,6 +266,10 @@ header nav #menu:hover .content ul li a:hover {
   color: #ffffff;
 }
 
+.register {
+  width: 100%;
+  height: 80vh;
+}
 .form {
   display: flex;
   flex-direction: column;
@@ -278,7 +282,7 @@ header nav #menu:hover .content ul li a:hover {
 .form input,
 .form select {
   width: 100%;
-  max-width: 602px;
+  max-width: 660px;
   padding: 10px;
   margin: 10px 0;
   border: 2px solid #062c80;
@@ -292,7 +296,7 @@ header nav #menu:hover .content ul li a:hover {
 input[type="date"],
 input[type="number"] {
   width: 45%;
-  max-width: 400px;
+  max-width: 438.6px;
   padding: 10px;
   margin: 10px 0;
   border: 2px solid #062c80;
@@ -302,12 +306,14 @@ input[type="number"] {
 
 .form textarea {
   width: 100%;
-  max-width: 1210px;
+  max-width: 1325px;
   padding: 10px;
   margin: 10px 0;
   border: 2px solid #062c80;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+  resize: none;
+  height: 120px;
 }
 
 .form button[type="submit"] {
