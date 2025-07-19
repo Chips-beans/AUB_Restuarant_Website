@@ -33,8 +33,6 @@ body {
 }
 #content {
   flex: 1; /* This pushes footer to bottom */
-  
-  border: 2px dashed red;
 }
 
 /*------- header style -------*/
@@ -515,18 +513,16 @@ hr {
   position: absolute;
   top: 20%;
   left: 15%;
-
   border-top-left-radius: 275px;
   border-top-right-radius: 275px;
 }
 #foodlabel {
-  height: 11vh;
+  height: 3.4vh;
 }
 .meal-categories {
   display: flex;
   justify-content: center;
   gap: 0;
-  margin-bottom: 80px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -573,9 +569,6 @@ hr {
 .category-icon {
   font-size: 18px;
   opacity: 0.7;
-}
-.menu {
-  padding-bottom: 40px;
 }
 .menu-container {
   background: white;
@@ -686,15 +679,24 @@ hr {
 }
 
 .menu-content {
-  display: none;
+  /* display: none; */
   margin: 2em;
+  margin-top: 0;
+
 }
 
 .menu-content:target {
   display: block;
 }
-
 .menu-content.active {
+  display: block;
+}
+iframe {
+  width: 100%;
+  height: 340vh;
+
+  margin: 0;
+  padding: 0;
   display: block;
 }
 
