@@ -3,7 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+} 
 
+#content {
+  flex: 1;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -14,6 +23,18 @@ body {
   flex-direction: column;
   gap: 0;
   padding-top: 80px;
+  min-height: 100vh;
+
+}
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+#content {
+  flex: 1; /* This pushes footer to bottom */
+  
+  border: 2px dashed red;
 }
 
 /*------- header style -------*/
@@ -215,7 +236,6 @@ header nav #menu:hover .content ul li a:hover {
   background-position: center;
 }
 
-
 .rest_desc {
   padding: 40px 20px;
   text-align: center;
@@ -410,7 +430,6 @@ footer p {
   background-position: center;
 }
 
-
 .quote {
   margin-top: 80px;
   margin-left: 100px;
@@ -501,60 +520,63 @@ hr {
   border-top-right-radius: 275px;
 }
 #foodlabel {
-  height: 100vh;
+  height: 11vh;
 }
 .meal-categories {
-            display: flex;
-            justify-content: center;
-            gap: 0;
-            margin-bottom: 80px;
-            border-bottom: 1px solid #e5e5e5;
-        }
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 80px;
+  border-bottom: 1px solid #e5e5e5;
+}
 
-        .category-btn {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 20px 40px;
-            background: transparent;
-            border: none;
-            border-bottom: 3px solid transparent;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-size: 16px;
-            font-weight: 400;
-            text-decoration: none;
-            color: #666;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            position: relative;
-        }
+.category-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 20px 40px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
 
-        .category-btn:hover {
-            color: #1a1a1a;
-            border-bottom-color: #c9a96e;
-        }
+.category-btn:hover {
+  color: #1a1a1a;
+  border-bottom-color: #c9a96e;
+}
 
-        .category-btn.active {
-            color: #1a1a1a;
-            border-bottom-color: #c9a96e;
-            font-weight: 500;
-        }
+.category-btn.active {
+  color: #1a1a1a;
+  border-bottom-color: #c9a96e;
+  font-weight: 500;
+}
 
-        .category-btn:focus {
-            outline: none;
-        }
+.category-btn:focus {
+  outline: none;
+}
 
-        .category-btn:target {
-            color: #1a1a1a;
-            border-bottom-color: #c9a96e;
-            font-weight: 500;
-        }
+.category-btn:target {
+  color: #1a1a1a;
+  border-bottom-color: #c9a96e;
+  font-weight: 500;
+}
 
-        .category-icon {
-            font-size: 18px;
-            opacity: 0.7;
-        }
+.category-icon {
+  font-size: 18px;
+  opacity: 0.7;
+}
+.menu {
+  padding-bottom: 40px;
+}
 .menu-container {
   background: white;
   border-radius: 0;
@@ -580,7 +602,6 @@ hr {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 3px;
-  
 }
 
 .section-title::after {
@@ -615,7 +636,6 @@ hr {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
   border-color: #e5e5e5;
 }
-
 
 .item-image {
   width: 100%;
@@ -934,7 +954,6 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
 }
-
 
 /* Contact Info Section */
 .contact-info {
