@@ -266,63 +266,51 @@ header nav #menu:hover .content ul li a:hover {
   color: #ffffff;
 }
 
-.register {
-  width: 100%;
-  height: 80vh;
-}
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
-  margin-left: 100px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 700px;
+  width: 90%;
+  box-sizing: border-box;
 }
 
 .form input,
-.form select {
+.form select,
+.form textarea {
   width: 100%;
-  max-width: 660px;
   padding: 10px;
   margin: 10px 0;
   border: 2px solid #062c80;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
-  justify-items: center;
-  align-items: center;
+  box-sizing: border-box;
 }
 
 #nationality,
 input[type="date"],
 input[type="number"] {
-  width: 45%;
-  max-width: 438.6px;
-  padding: 10px;
-  margin: 10px 0;
-  border: 2px solid #062c80;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+  width: 100%;
 }
 
 .form textarea {
-  width: 100%;
-  max-width: 1325px;
-  padding: 10px;
-  margin: 10px 0;
-  border: 2px solid #062c80;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
   resize: none;
   height: 120px;
 }
 
 .form button[type="submit"] {
-  width: 120px;
-  height: 7vh;
+  width: 100%;
+  max-width: 200px;
+  height: 45px;
   background-color: #062c80;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  border: none;
+  border-radius: 5px;
 }
 
 /*------------------ end of Home page ------------------*/
