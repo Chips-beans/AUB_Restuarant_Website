@@ -665,6 +665,7 @@ hr {
 
 .menu-content {
   display: none;
+  margin: 2em;
 }
 
 .menu-content:target {
