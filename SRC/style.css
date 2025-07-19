@@ -704,6 +704,9 @@ iframe {
 
 /* Enf of Menu Page */
 
+
+
+
 /* about page */
 
 /* Reset and Base */
@@ -825,6 +828,90 @@ body {
 }
 
 /* facebook ig button */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+.team-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.subheading {
+  color: #f4a300;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.team-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 230px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.chef-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.chef-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.designation {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  margin: 0 8px;
+  text-decoration: none;
+  color: white;
+  background-color: #f4a300;
+  padding: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #ffa500;
+}
+
+
+
 
 /*=============Contact=========================*/
 .contact-section {
