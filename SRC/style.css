@@ -215,6 +215,7 @@ header nav #menu:hover .content ul li a:hover {
   background-position: center;
 }
 
+
 .rest_desc {
   padding: 40px 20px;
   text-align: center;
@@ -402,7 +403,7 @@ footer p {
 .mainmenu {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 92vh;
+  /* grid-template-rows: 110vh; */
   justify-content: center;
   /* margin-top: 60px; */
   overflow: hidden;
@@ -413,6 +414,7 @@ footer p {
   background-size: cover;
   background-position: center;
 }
+
 
 .quote {
   margin-top: 80px;
@@ -616,6 +618,7 @@ hr {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
   border-color: #e5e5e5;
 }
+
 
 .item-image {
   width: 100%;
@@ -845,6 +848,7 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
 }
+
 
 /* Contact Info Section */
 .contact-info {
