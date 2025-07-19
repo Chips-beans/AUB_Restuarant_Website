@@ -31,9 +31,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-#content {
-  flex: 1; /* This pushes footer to bottom */
-}
 
 /*------- header style -------*/
 .logo {
@@ -54,8 +51,8 @@ header {
 .background {
   width: 100%;
   height: 85px;
-  /* background-color: #f2f2f2; */
-  /* position: fixed; */
+  background-color: #f2f2f2; 
+  position : fixed;
   display: flex;
 }
 
@@ -415,10 +412,9 @@ footer p {
 .mainmenu {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* grid-template-rows: 100vh; */
-  /* grid-template-rows: 110vh; */
+  grid-template-rows: 100vh;
   justify-content: center;
-  /* margin-top: 60px; */
+  margin-top: 60px;
   overflow: hidden;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent),
     url(/image/menu/label1.jpg);
@@ -579,6 +575,7 @@ hr {
 }
 
 .menu-section {
+  margin-top: 3.5em;
   margin-bottom: 80px;
 }
 
@@ -693,8 +690,7 @@ hr {
 }
 iframe {
   width: 100%;
-  height: 340vh;
-
+  height: 210vh;
   margin: 0;
   padding: 0;
   display: block;
