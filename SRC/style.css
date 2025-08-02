@@ -656,7 +656,7 @@ iframe {
 
 
 
-/* about page */
+/* =============about page===================== */
 
 /* Reset and Base */
 body {
@@ -742,9 +742,8 @@ body {
 
 .features {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 2rem;
+  
 }
 
 .feature {
@@ -814,7 +813,7 @@ body {
   background-color: white;
   border-radius: 10px;
   padding: 25px 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  
   width: 230px;
   text-align: center;
   transition: transform 0.3s ease;
