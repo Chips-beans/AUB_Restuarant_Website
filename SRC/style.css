@@ -818,6 +818,9 @@ body {
   text-align: center;
   transition: transform 0.3s ease;
 }
+.team-card:hover{
+  transform: scale(1.1);
+}
 
 .chef-img {
   width: 120px;
