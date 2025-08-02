@@ -133,7 +133,7 @@ header nav #menu {
 header nav #menu .content {
   position: absolute;
   opacity: 0;
-  transition: opacity 0.7s ease, transform 0.5s ease;
+  transition: opacity 0.7s ease;
 }
 
 header nav #menu .content ul li a {
