@@ -634,10 +634,10 @@ hr {
   margin: 2em;
   margin-top: 0;
 }
-
+/* 
 .menu-content:target {
   display: block;
-}
+} */
 .menu-content.active {
   display: block;
 }
