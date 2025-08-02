@@ -819,10 +819,6 @@ body {
   transition: transform 0.3s ease;
 }
 
-.team-card:hover {
-  transform: translateY(-5px);
-}
-
 .chef-img {
   width: 120px;
   height: 120px;
